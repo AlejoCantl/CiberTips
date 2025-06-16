@@ -1,5 +1,5 @@
 import ContentSection from '@/app/components/ContentSection';
-import styles from '../styles/Home.module.css';
+import styles from '../styles/Page.module.css';
 
 export const metadata = {
   title: 'Contraseñas Seguras',
