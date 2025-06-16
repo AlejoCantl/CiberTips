@@ -1,8 +1,19 @@
 .header {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #FFFFFF;
     padding: 20px;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    border-bottom: 1px solid #1E60D5;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
 }
 
 .header h1 {
