@@ -1,28 +1,19 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import ContentSection from '@/app/components/ContentSection';
+import styles from '../app/styles/Home.module.css';
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <h1 className={styles.title}>Welcome to My Next.js App</h1>
-      <p className={styles.description}>
-        This is a simple example of a Next.js application.
-      </p>
-      <Image
-        src="/nextjs-logo.png"
-        alt="Next.js Logo"
-        width={200}
-        height={200}
-        className={styles.logo}
-        priority
-        unoptimized={true} // Disable image optimization
-        loading="eager" // Load the image immediately
-        fetchPriority="high" // Set high priority for fetching the image
-        quality={100} // Set image quality to 100%
-        placeholder="blur" // Use blur placeholder
-        blurDataURL="/nextjs-logo-blur.png" // Path to the blurred placeholder image
-        sizes="(max-width: 600px) 100vw, 50vw" // Responsive image sizes
-      />
-    </main>
+    <>
+      <div className={styles.container}>
+        <ContentSection
+          title="Bienvenidos"
+          content="Este sitio está diseñado para ayudar a las comunidades rurales a usar la tecnología de forma segura. Aquí encontrarás consejos prácticos sobre cómo proteger tus dispositivos, datos personales y evitar riesgos en internet."
+        />
+        <ContentSection
+          title="¿Por qué es importante la seguridad digital?"
+          content="En un mundo cada vez más conectado, proteger tu información es clave. En las comunidades rurales, donde el acceso a internet puede ser limitado, es aún más importante conocer las prácticas básicas para evitar problemas como robos de datos o estafas en línea."
+        />
+      </div>
+    </>
   );
 }
