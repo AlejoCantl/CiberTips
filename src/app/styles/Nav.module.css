@@ -8,11 +8,12 @@
 }
 
 .nav li a {
-    color: white;
+    color: black;
     text-decoration: none;
     font-weight: bold;
 }
 
 .nav li a:hover {
+    color: #1E60D5;
     text-decoration: underline;
 }
