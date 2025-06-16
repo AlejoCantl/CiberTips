@@ -14,6 +14,14 @@ export default function Home() {
         width={200}
         height={200}
         className={styles.logo}
+        priority
+        unoptimized={true} // Disable image optimization
+        loading="eager" // Load the image immediately
+        fetchPriority="high" // Set high priority for fetching the image
+        quality={100} // Set image quality to 100%
+        placeholder="blur" // Use blur placeholder
+        blurDataURL="/nextjs-logo-blur.png" // Path to the blurred placeholder image
+        sizes="(max-width: 600px) 100vw, 50vw" // Responsive image sizes
       />
     </main>
   );
